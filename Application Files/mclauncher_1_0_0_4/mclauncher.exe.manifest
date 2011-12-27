@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="mclauncher.exe" version="1.0.0.4" publicKeyToken="c6fef117af336e05" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="mclauncher" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="mclauncher.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC-Manifestoptionen
+          Wenn Sie die Zugangsebene für das Windows-Benutzerkonto ändern möchten, ersetzen Sie den 
+          requestedExecutionLevel-Knoten durch eines der folgenden Elemente.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Löschen Sie den requestedExecutionLevel-Knoten, wenn Sie 
+         zum Gewährleisten der Abwärtskompatibilität die Datei- und Registrierungsvirtualisierung verwenden möchten.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="mclauncher.exe" size="105984">
+      <assemblyIdentity name="mclauncher" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>XsZkjR6TyAxNpXjK909+/V0Nm9E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=christoph-PC\christoph" issuerKeyHash="d1a9251b47c3a8c7afbf9659303a882edc104715" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>w0XY6XtmUArfW/2cKnnkJ43bl1k=</DigestValue></Reference></SignedInfo><SignatureValue>QHzL3EXXKusmSrD3+/okVTyxwrdm75hD/xZpViDYa42+lGfOvOc9yUw5RXxx8hVRnO+B0nbgQEclM3S9M3otqDfelFzBc85Um0HlEnvPqY1l0jA86WxmVdwCxZjNAIbm4t8iaEu5VMw5TI+ag+C/7rLnSLkr6wmUMcoNwKR9myk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wZkH8j9dVTRIfZYBKCS5oWUeQnl/zFz/dCEKGShnRk7TxVgTGBHG6Afqq/e13/AsItr0L/Rqh9SQQugsZ5RXMlvjwWSNbcbIaAjzfMVlCcEThoF1hz8J10q1H6Y73K11CrNnbfBpCZyS/NmtzpSig/nfVv/I5CNhBgjC2RO5OWs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5997db8d27e4792a9cfd5bdf0a50667be9d845c3" Description="" Url=""><as:assemblyIdentity name="mclauncher.exe" version="1.0.0.4" publicKeyToken="c6fef117af336e05" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=christoph-PC\christoph</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>BFesnGaiSS3MlbFKd45RIwrsQ5w=</DigestValue></Reference></SignedInfo><SignatureValue>gQLJlAy4pxd3U+WqRRdGLRIQKRrkUk6QKQOvBfACe65a+uNRWqGBGUNe4WrCHVdpcPIoNghXS3n+X+gkHqg6H+RM3t3urSr3FifnU3pBZaFSiKaM2t42m/fA+hIqrYEJW8sWasb/ugUg5dIMjioKL3Dd/GHdfC8zm1VBVyfi8ig=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wZkH8j9dVTRIfZYBKCS5oWUeQnl/zFz/dCEKGShnRk7TxVgTGBHG6Afqq/e13/AsItr0L/Rqh9SQQugsZ5RXMlvjwWSNbcbIaAjzfMVlCcEThoF1hz8J10q1H6Y73K11CrNnbfBpCZyS/NmtzpSig/nfVv/I5CNhBgjC2RO5OWs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQPY+qFMjYTJFP3g4msxBodjANBgkqhkiG9w0BAQUFADA3MTUwMwYDVQQDHiwAYwBoAHIAaQBzAHQAbwBwAGgALQBQAEMAXABjAGgAcgBpAHMAdABvAHAAaDAeFw0xMTEyMjcwMDA4NTBaFw0xMjEyMjYwNjA4NTBaMDcxNTAzBgNVBAMeLABjAGgAcgBpAHMAdABvAHAAaAAtAFAAQwBcAGMAaAByAGkAcwB0AG8AcABoMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBmQfyP11VNEh9lgEoJLmhZR5CeX/MXP90IQoZKGdGTtPFWBMYEcboB+qr97Xf8Cwi2vQv9GqH1JBC6CxnlFcyW+PBZI1txshoCPN8xWUJwROGgXWHPwnXSrUfpjvcrXUKs2dt8GkJnJL82a3OlKKD+d9W/8jkI2EGCMLZE7k5awIDAQABMA0GCSqGSIb3DQEBBQUAA4GBALZLlsMiLrABXBoDdyypBDpOhW1uqZIik1QM2aBHJARBtAqJFA5UvXWh4kf9ukuVnwZtX6vQaEiwqB64GPilgmgKqJhS2AOxPqJziLR5RWd+D3eJ3SKxLeQwbJnejZns11316FdWaP6vCWUQjqLlYAodwaLqG9YhTXK6HBlTS7vS</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
